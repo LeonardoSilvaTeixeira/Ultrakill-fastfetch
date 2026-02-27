@@ -1,0 +1,174 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo":{
+    "type" : "file-raw",
+    "source" : "/home/leo/.config/fastfetch/desenho.txt",
+    "color" : {
+      "1" : "white"
+    }
+  },
+  "display": {
+     "color" : {
+      "separator": "white",
+      "keys" : "white",
+      "output" : "white"
+     },
+
+     "separator": "... ",
+
+     "bar":{
+       "char":{
+        "elapsed" : "▣",
+        "total" : "□"
+       },
+
+       "width": 10
+     },
+
+"percent": {
+        "type": 2,         // 1=number, 2=bar, 3=both, 9=colored number
+        "color": {
+            "green": "white",
+            "yellow": "white",
+            "red": "white"
+        }
+
+   }
+},   
+  "modules": [
+    {
+      "type" : "custom",
+      "format": "┌──────────────────────────────────────┐" 
+    },
+
+    {
+      "type": "custom",
+      "format": "│INFO                         🗕  🗗  🗙  │"
+    },
+
+    {
+      "type" : "custom",
+      "format": "├──────────────────────────────────────┤" 
+    },
+
+    {
+      "type" : "custom",
+      "format": "│          Operational_System          │" 
+    },
+    
+    {
+      "type": "custom",
+      "format": "│                                      │"
+    },
+
+    {
+      "type": "os",
+      "keyColor" : "white",
+      "key": "│ OS",
+      "format": " SMILE_OS.{version}              │"
+    },
+
+    {
+      "type": "terminal",
+      "keyColor" : "white",
+      "key": "│ TERMINAL",
+      "format": " {process-name}-{version}            │"
+    },
+
+    {
+      "type": "shell",
+      "keyColor": "white",
+      "key": "│ SHELL",
+      "format": " {pretty-name}-{version}                 │"
+    },
+    
+    {
+      "type": "host",
+      "keyColor": "white",
+      "key": "│ HOST",
+      "format": " Leost                       │"
+    },
+
+    {
+      "type": "custom",
+      "format": "│                                      │"
+    },
+
+
+    {
+      "type" : "custom",
+      "format": "│               Hardware               │" 
+    },
+
+    {
+      "type": "custom",
+      "format": "│                                      │"
+    },
+
+    {
+      "type": "cpu",
+      "key": "│ CPU",
+      "format": " {name}@{freq-max}   │"
+    },
+
+    {
+      "type": "gpu",
+      "key": "│ GPU",
+      "format": " {name}        │"
+    },
+
+    {
+      "type": "memory",
+      "key": "│ RAM",
+      "format": " {percentage-bar} ({total}%)  │",
+      "keyColor": "white"
+    },
+    
+    {
+      "type": "disk",
+      "key": "│ DISK",
+      "format": " {size-used}/{size-total}        │",
+      "keyColor": "white"
+    },
+
+    {
+      "type": "custom",
+      "format": "│                                      │"
+    },
+
+    {
+      "type" : "custom",
+      "format": "├──────────────────────────────────────┤" 
+    },
+
+    {
+      "type": "custom",
+      "format": "│                                      │"
+    },
+
+    {
+      "type": "custom",
+      "format": "│    Hell is full                      │"
+    },
+
+    {
+      "type": "custom",
+      "format": "│    Blood is fuel                     │"
+    },
+
+    {
+      "type": "custom",
+      "format": "│    Mankind is dead                   │"
+    },
+
+    {
+      "type": "custom",
+      "format": "│                                      │"
+    },
+
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────┘" 
+    },
+  ]
+}
